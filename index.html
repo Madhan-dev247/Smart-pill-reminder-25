@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Pill Reminder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header>
+    <h1>Smart Pill Reminder 💊</h1>
+    <p class="tagline">Never miss your medicine again!</p>
+  </header>
+
+  <main>
+    <section class="add-section">
+      <input list="medicineNames" id="medicineName" placeholder="Medicine Name" />
+      <datalist id="medicineNames"></datalist>
+
+      <input type="text" id="medicineDosage" placeholder="Dosage (e.g., 1 tablet, 5ml)" />
+      <input type="time" id="medicineTime" />
+      
+      <button id="addBtn">➕ Add</button>
+      <button id="voiceBtn">🎤 Speak</button>
+    </section>
+
+    <section class="list-section">
+      <h2>Today's Medicines</h2>
+      <ul id="medicineList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Smart Pill Reminder © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
